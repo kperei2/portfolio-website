@@ -34,6 +34,8 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease;
+  overflow: visible !important;
+  height: auto !important;
 }
 
 .navbar.scrolled {
@@ -51,6 +53,8 @@ body {
   height: 70px;
   width: 100%;
   min-width: 0;
+  overflow: visible !important;
+  height: auto !important;
 }
 
 .nav-brand h1 {
@@ -88,8 +92,10 @@ body {
 }
 
 .nav-social {
-  display: flex;
+  display: flex !important;
   gap: 1rem;
+  background: rgba(255, 0, 0, 0.1); /* TEMP: highlight for debugging */
+  z-index: 1001;
 }
 
 .nav-social a {
