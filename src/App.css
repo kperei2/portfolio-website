@@ -30,8 +30,9 @@ body {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.95);
+  border-bottom: none;
+  box-shadow: none;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -51,6 +52,8 @@ body {
   height: 70px;
   width: 100%;
   min-width: 0;
+  background: none;
+  box-shadow: none;
 }
 
 .nav-brand h1 {
@@ -90,6 +93,7 @@ body {
 .nav-social {
   display: flex;
   gap: 1rem;
+  background: none;
 }
 
 .nav-social a {
@@ -103,6 +107,7 @@ body {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
+  background: none;
 }
 
 .nav-social a:hover {
