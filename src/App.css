@@ -33,8 +33,9 @@ body {
   border-bottom: none;
   box-shadow: none;
   backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 2000;
   transition: all 0.3s ease;
+  overflow: visible;
 }
 
 .navbar.scrolled {
@@ -54,6 +55,9 @@ body {
   min-width: 0;
   background: none;
   box-shadow: none;
+  flex-wrap: wrap;
+  overflow: visible;
+  z-index: 2001;
 }
 
 .nav-brand h1 {

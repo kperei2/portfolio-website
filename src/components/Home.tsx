@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           I'm a software engineer based in Chicago, Illinois. I'm interested in intuitive, user-focused applications. I'm currently pursuing roles in IT, software development, web development, and data science.
         </p>
         <div className="button-container">
-          <a href="mailto:your.krpereira02@gmail.com" className="email-button">
+          <a href="mailto:krpereira02@gmail.com" className="email-button">
             <FaEnvelope />
             Contact Me
           </a>
