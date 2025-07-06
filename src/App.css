@@ -35,7 +35,7 @@ body {
   backdrop-filter: blur(10px);
   z-index: 2000;
   transition: all 0.3s ease;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 .navbar.scrolled {
@@ -51,12 +51,13 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   min-width: 0;
+  box-sizing: border-box;
   background: none;
   box-shadow: none;
   flex-wrap: wrap;
-  overflow: visible;
+  overflow: visible !important;
   z-index: 2001;
 }
 
@@ -98,6 +99,8 @@ body {
   display: flex;
   gap: 1rem;
   background: none;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .nav-social a {
