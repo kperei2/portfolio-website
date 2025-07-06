@@ -53,8 +53,9 @@ const Navbar: React.FC = () => {
             <FaLinkedin />
           </a>
           <a 
-            href="/Kevin_Pereira_Resume.pdf" 
-            download="Kevin_Pereira_Resume.pdf"
+            href="https://drive.google.com/file/d/1ZVe2_2z1BdfXD3JF07HL_0H1hpLkCqe_/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Download Resume"
             data-tooltip="My Resume"
           >

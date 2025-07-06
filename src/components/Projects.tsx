@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaRegFile } from 'react-icons/fa';
 
 interface Project {
   id: number;
@@ -9,6 +9,7 @@ interface Project {
   githubUrl?: string;
   liveUrl?: string;
   image?: string;
+  designDocUrl?: string;
 }
 
 const Projects: React.FC = () => {
@@ -47,11 +48,12 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/kperei2/portfolio-website",
     },
     {
-    id: 5,
-    title: "Stellar Sleep",
-    description: "A prototype front end application based on Stellar Sleep, a sleep tracking app. The application allows for sleep tracking, a sleep journal, and the ability to play soothing sounds to help users fall asleep.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/kperei2/StellarSleep-422",
+      id: 5,
+      title: "Stellar Sleep",
+      description: "A prototype front end application based on Stellar Sleep, a sleep tracking app. The application allows for sleep tracking, a sleep journal, and the ability to play soothing sounds to help users fall asleep.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/kperei2/StellarSleep-422",
+      designDocUrl: "https://drive.google.com/file/d/1lku4jUD56IeZ0wHi3d4YuEdo5fqsaPkW/view?usp=drive_link"
     }
   ];
 
@@ -135,6 +137,17 @@ const Projects: React.FC = () => {
                       className="project-link"
                     >
                       <FaExternalLinkAlt />
+                    </a>
+                  )}
+                  {projects[activeProject].designDocUrl && (
+                    <a
+                      href={projects[activeProject].designDocUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label="View Design Doc"
+                    >
+                      <FaRegFile />
                     </a>
                   )}
                 </div>
