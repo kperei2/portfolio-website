@@ -21,30 +21,37 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title: "UIC CS Credit Checker",
-      description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
+      description: "A full-stack web application that allows students to check their progress towards graduation requirements. The application uses a MySQL database to store student information and course requirements.",
       technologies: ["HTML", "CSS", "MySQL", "JavaScript"],
-      githubUrl: "https://github.com/yourusername/ecommerce-platform",
+      githubUrl: "https://github.com/kperei2/Graduation_Checker",
     },
     {
       id: 2,
       title: "mnml Music",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      description: "A minimalist mobile music player built with React Native and SQlite. The application allows for playlist creation, song playback, and song search. Currently under development.",
       technologies: ["React Native", "SQLite"],
-      githubUrl: "https://github.com/yourusername/task-manager",
+      githubUrl: "https://github.com/kperei2/MNML-music",
     },
     {
       id: 3,
-      title: "Yelp API",
-      description: "A responsive weather application that displays current weather conditions and forecasts using OpenWeatherMap API with beautiful data visualization.",
+      title: "NBA Betting Analysis",
+      description: "An analysis of NBA betting data using Python, pandas, and BeautifulSoup. The analysis includes a comparison of betting odds and actual results, as well as a prediction model for future games.",
       technologies: ["Python", "pandas", "BeautifulSoup"],
-      githubUrl: "https://github.com/yourusername/weather-dashboard",
+      githubUrl: "https://github.com/ihern/418-Project",
     },
     {
       id: 4,
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and clean design principles.",
       technologies: ["React", "TypeScript", "CSS3", "Vite"],
-      githubUrl: "https://github.com/yourusername/portfolio",
+      githubUrl: "https://github.com/kperei2/portfolio-website",
+    },
+    {
+    id: 5,
+    title: "Stellar Sleep",
+    description: "A prototype front end application based on Stellar Sleep, a sleep tracking app. The application allows for sleep tracking, a sleep journal, and the ability to play soothing sounds to help users fall asleep.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/kperei2/StellarSleep-422",
     }
   ];
 

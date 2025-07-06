@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             <FaLinkedin />
           </a>
           <a 
-            href="/resume.pdf" 
+            href="/Kevin_Pereira_Resume.pdf" 
             download="Kevin_Pereira_Resume.pdf"
             aria-label="Download Resume"
             data-tooltip="My Resume"
