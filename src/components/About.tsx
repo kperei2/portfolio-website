@@ -25,32 +25,34 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="about-section">
-      <div className="about-content">
-        <h2>About Me</h2>
-        <p>
-          I recently graduated with a B.S. in Computer Science from the{' '}
-          <a 
-            href="https://www.uic.edu" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="link"
-          >
-            University of Illinois at Chicago
-          </a>.
-          I have always been passionate about creating accessible, user-friendly applications that are easy to use and understand.
-        </p>
-        <p>In my free time, I enjoy collecting vinyl records, playing video games, and listening to music.</p>
-        <p className="skills-intro">Here are some tools I like to use:</p>
-        <div className="skills-grid">
-          {skills.map((skill, index) => {
-            const IconComponent = skill.icon;
-            return (
-              <div key={index} className="skill-item">
-                <IconComponent />
-                <span>{skill.name}</span>
-              </div>
-            );
-          })}
+      <div className="content-container">
+        <div className="about-content">
+          <h2>About Me</h2>
+          <p>
+            I recently graduated with a B.S. in Computer Science from the{' '}
+            <a 
+              href="https://www.uic.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="link"
+            >
+              University of Illinois at Chicago
+            </a>.
+            I have always been passionate about creating accessible, user-friendly applications that are easy to use and understand.
+          </p>
+          <p>In my free time, I enjoy collecting vinyl records, playing video games, and listening to music.</p>
+          <p className="skills-intro">Here are some tools I like to use:</p>
+          <div className="skills-grid">
+            {skills.map((skill, index) => {
+              const IconComponent = skill.icon;
+              return (
+                <div key={index} className="skill-item">
+                  <IconComponent />
+                  <span>{skill.name}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
