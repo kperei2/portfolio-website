@@ -96,95 +96,97 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="projects-section">
-      <div className="projects-content">
-        <h2>Projects</h2>
-        
-        <div className="project-showcase">
-          <button 
-            className="nav-button prev-button" 
-            onClick={prevProject}
-            aria-label="Previous project"
-          >
-            ‹
-          </button>
+      <div className="content-container">
+        <div className="projects-content">
+          <h2>Projects</h2>
           
-          <div 
-            className="project-window"
-            ref={projectRef}
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-          >
-            <div className="project-card">
-              <div className="project-header">
-                <h3>{projects[activeProject].title}</h3>
-                <div className="project-links">
-                  {projects[activeProject].githubUrl && (
-                    <a 
-                      href={projects[activeProject].githubUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <FaGithub />
-                    </a>
-                  )}
-                  {projects[activeProject].liveUrl && (
-                    <a 
-                      href={projects[activeProject].liveUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
-                  )}
-                  {projects[activeProject].designDocUrl && (
-                    <a
-                      href={projects[activeProject].designDocUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      aria-label="View Design Doc"
-                    >
-                      <FaRegFile />
-                    </a>
-                  )}
+          <div className="project-showcase">
+            <button 
+              className="nav-button prev-button" 
+              onClick={prevProject}
+              aria-label="Previous project"
+            >
+              ‹
+            </button>
+            
+            <div 
+              className="project-window"
+              ref={projectRef}
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+            >
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>{projects[activeProject].title}</h3>
+                  <div className="project-links">
+                    {projects[activeProject].githubUrl && (
+                      <a 
+                        href={projects[activeProject].githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <FaGithub />
+                      </a>
+                    )}
+                    {projects[activeProject].liveUrl && (
+                      <a 
+                        href={projects[activeProject].liveUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
+                    {projects[activeProject].designDocUrl && (
+                      <a
+                        href={projects[activeProject].designDocUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        aria-label="View Design Doc"
+                      >
+                        <FaRegFile />
+                      </a>
+                    )}
+                  </div>
+                </div>
+                
+                <p className="project-description">
+                  {projects[activeProject].description}
+                </p>
+                
+                <div className="project-technologies">
+                  {projects[activeProject].technologies.map((tech, index) => (
+                    <span key={index} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
-              
-              <p className="project-description">
-                {projects[activeProject].description}
-              </p>
-              
-              <div className="project-technologies">
-                {projects[activeProject].technologies.map((tech, index) => (
-                  <span key={index} className="tech-tag">
-                    {tech}
-                  </span>
-                ))}
-              </div>
             </div>
+            
+            <button 
+              className="nav-button next-button" 
+              onClick={nextProject}
+              aria-label="Next project"
+            >
+              ›
+            </button>
           </div>
           
-          <button 
-            className="nav-button next-button" 
-            onClick={nextProject}
-            aria-label="Next project"
-          >
-            ›
-          </button>
-        </div>
-        
-        <div className="project-pagination">
-          {projects.map((_, index) => (
-            <button
-              key={index}
-              className={`pagination-dot ${index === activeProject ? 'active' : ''}`}
-              onClick={() => goToProject(index)}
-              aria-label={`Go to project ${index + 1}`}
-            />
-          ))}
+          <div className="project-pagination">
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                className={`pagination-dot ${index === activeProject ? 'active' : ''}`}
+                onClick={() => goToProject(index)}
+                aria-label={`Go to project ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
