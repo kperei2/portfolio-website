@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
               <FaLinkedin />
             </a>
             <a 
-              href="https://drive.google.com/file/d/1ZVe2_2z1BdfXD3JF07HL_0H1hpLkCqe_/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1axVerQkuj5RMqhDMdOtnN0QAMtL_jlFe/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resume"
