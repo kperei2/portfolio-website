@@ -1,9 +1,9 @@
-
 import './App.css';
 import Navbar from './components/Navbar.tsx';
 import Home from './components/Home.tsx';
 import About from './components/About.tsx';
 import Projects from './components/Projects.tsx';
+import Footer from './components/Footer.tsx';
 
 /* Add different styles selector, Brutalism, Minimalism, Fridge */
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <About />
         <Projects />
       </main>
+      <Footer />
     </div>
   );
 }
