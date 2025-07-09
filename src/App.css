@@ -136,7 +136,7 @@ body {
   color: white;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
@@ -627,7 +627,7 @@ section {
 }
 
 @media (max-width: 600px) {
-  .about-content {
+  .home-content, .about-content, .projects-content {
     padding: 1rem;
     font-size: 1rem;
   }
@@ -639,6 +639,7 @@ section {
 }
 
 @media (max-width: 375px) {
+  .home-content, 
   .about-content,
   .projects-content,
   .nav-container,

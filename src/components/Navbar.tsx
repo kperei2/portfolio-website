@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="GitHub"
-              data-tooltip="GitHub"
+              title="GitHub"
             >
               <FaGithub />
             </a>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              data-tooltip="LinkedIn"
+              title="LinkedIn"
             >
               <FaLinkedin />
             </a>
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resume"
-              data-tooltip="My Resume"
+              title="My Resume"
             >
               <FaFileAlt />
             </a>
